@@ -1,0 +1,99 @@
+/* Pointage.css */
+
+/* Centrage du formulaire avec une petite ombre */
+.container {
+    max-width: 400px;
+    margin: 60px auto; /* Centrage vertical et horizontal */
+    padding: 30px;
+    background-color: #ffffff; /* Couleur de fond blanche */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombre douce pour effet de profondeur */
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #343a40; /* Gris foncé pour le titre */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Champs du formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #495057;
+    transition: border-color 0.2s;
+}
+
+/* Effet de focus sur les champs */
+.form-group input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+/* Bouton de soumission */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Popup de confirmation */
+.confirmation-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Message de succès */
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+.success-message h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.success-message p {
+    margin: 5px 0 0;
+}

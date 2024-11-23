@@ -1,0 +1,112 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    /* background-color: #2c3e50; */
+     background-color:#264653;
+    color: white;
+    display: flex;
+    padding: 40px 20px;
+
+    flex-direction: column;
+    position: fixed; /* Rend la sidebar fixe */
+    top: 0;
+    left: 0;
+    height: 100%; /* S'assure qu'elle occupe toute la hauteur */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar .logo {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #34495e;
+}
+
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar .menu li.active,
+.sidebar .menu li:hover {
+    background-color: #34495e;
+}
+
+.sidebar .menu li svg {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf0f1;
+    margin-left: 250px; /* Évite que le contenu ne chevauche la sidebar */
+}
+
+.navbar {
+    position: fixed; /* Rend la navbar fixe */
+    top: 0;
+    left: 250px; /* Ajuste sa position par rapport à la sidebar fixe */
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 35px 20px;
+    background-color: #264653;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* S'assure qu'elle reste au-dessus des autres éléments */
+}
+
+.navbar .icon {
+    font-size: 20px;
+    margin-left: 15px;
+   
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #fff;
+    /* transform: 'translatex(60px)', */
+}
+.icon{
+     
+   transform: translatex(-80px);
+
+}
+
+.navbar .icon:hover {
+    color: #3498db;
+}
+.navbar-title {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    color:#fff;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 60px; /* Évite que le contenu chevauche la navbar */
+}

@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.feedback-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feedback-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.rating-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rating-group input {
+    display: none;
+}
+
+.rating-group label {
+    font-size: 30px;
+    color: #bdc3c7;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating-group input:checked ~ label {
+    color: #f39c12;
+}
+
+.rating-group input:not(:checked) ~ label:hover,
+.rating-group input:not(:checked) ~ label:hover ~ label {
+    color: #f39c12;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+.feedback-details, .feedback-success {
+    background-color: #d4edda;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    color: #155724;
+    font-size: 16px;
+    animation: fadeIn 0.5s;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

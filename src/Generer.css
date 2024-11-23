@@ -1,0 +1,63 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Couleur de fond pour la page */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px; /* Limite la largeur du conteneur principal */
+    margin: 20px auto; /* Centre le conteneur dans la fenêtre */
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond pour le rapport */
+    border-radius: 8px; /* Arrondir les coins */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* En-tête du rapport */
+.report-header {
+    display: flex;
+    justify-content: space-between; /* Espace entre les blocs d'information */
+    margin-bottom: 20px;
+}
+
+.info-block {
+    flex: 1; /* Chaque bloc prend une largeur égale */
+    padding: 10px;
+}
+
+/* Contenu du rapport */
+.report-content {
+    margin-bottom: 20px; /* Espace sous le contenu */
+}
+
+.report-content h2 {
+    color: #007bff; /* Couleur du titre */
+    margin-bottom: 5px;
+}
+
+.report-content p {
+    margin: 0 0 15px; /* Espacement entre les paragraphes */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+/* Pied de page */
+.report-footer {
+    text-align: center; /* Centre le bouton */
+}
+
+.report-footer button {
+    padding: 10px 20px; /* Espacement autour du texte */
+    background-color: #007bff; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 4px; /* Arrondir les coins du bouton */
+    cursor: pointer; /* Curseur pointer pour le bouton */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.report-footer button:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}

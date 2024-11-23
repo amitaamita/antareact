@@ -1,0 +1,57 @@
+/* DomainButtons.css */
+
+/* Style de l'en-tête */
+
+.header {
+  text-align: center;
+  background-color: #2a9d8f; /* Couleur de fond */
+  color: white;
+  padding: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 60%; /* Définir une largeur plus petite pour l'en-tête */
+  margin: 0 auto; /* Centrer l'en-tête */
+  border-radius: 8px; /* Coins arrondis pour un effet esthétique */
+}
+
+/* Conteneur pour les boutons de domaine */
+.domain-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Style de chaque carte de domaine */
+.domain-card {
+  background-color: #f9f9f9; /* Fond des cartes */
+  border: 1px solid #ddd; /* Bordure des cartes */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des cartes */
+  padding: 40px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Effet au survol */
+}
+
+.domain-card:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+/* Style des boutons de lien */
+.domain-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2a9d8f; /* Couleur de fond des boutons */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.domain-button:hover {
+  background-color: #264653; /* Couleur au survol */
+}

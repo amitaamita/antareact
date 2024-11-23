@@ -1,0 +1,48 @@
+.main-container {
+    display: flex;
+    /* height: 100vh; */
+}
+
+.image-section {
+    flex: 1;
+    background-image: url('src/assets/images.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px -10px;
+}
+
+.login-container {
+    flex: 1;
+    max-width: 300px;
+    margin: auto;
+    padding: 50px 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+body{
+    background-color: #e5e2e2;
+    padding: 0;
+    margin: auto;
+    font-family: sans-serif;
+}
+.login-container h2{
+    color: #000;
+}
+ h4{
+    transform: 'translateX(30px)',
+}
+.logocontainer h2 {
+    color:#000;
+   
+}
+*{
+    
+}
+
+
